@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name = "introMsg">Welcome to the Calculator of Destiny!
+
+In addition to making basic calculations, this calculator also makes quick and easy currency conversions. Simply select your preferred currencies and convert! </string>
+    <string name="calcResults">calculator results displayed here</string>
+    
+</resources>

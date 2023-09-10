@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name = "introMsg">
+    <string name="introMsg">
         Welcome to the Calculator of Destiny!
 
 Simply choose two numbers, your preferred operation, and calculate!

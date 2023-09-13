@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 String numberTwoText = numberTwoEditText.getText().toString();
 
                 try {
-                    double numeroUno = Double.parseDouble(numberOneText); // live love spanish
-                    double numeroDos = Double.parseDouble(numberTwoText);
+                    int numeroUno = Integer.parseInt(numberOneText); // live love spanish lol
+                    int numeroDos = Integer.parseInt(numberTwoText);
 
                     // Get the selected operation from the spinner
                     selection = spinner.getSelectedItem().toString();
@@ -57,16 +57,19 @@ public class MainActivity extends AppCompatActivity {
                     } else if (selection.equals("×")) {
                         numCalculated = numeroUno * numeroDos;
                     } else if (selection.equals("÷")) {
-                        numCalculated = numeroUno / numeroDos;
+                        numCalculated = (double) (numeroUno) / numeroDos;
                     }
 
                     // Display the result
                     String toDisplay = Double.toString(numCalculated);
                     resultView.setText(toDisplay);
                 } catch (Exception e) {
-                    // When input isn't valid
+                    // If some sort of error happens in-case:
                     resultView.setText("Invalid input");
                 }
+                // Creates a MediaPlayer object to play the mp3 in my raw directory
+                // Learned this from Technical Coding on YouTube and some help understanding with ChatGPT
+                // https://www.youtube.com/watch?v=P_fS9Xlu_w8
                 MediaPlayer mp =MediaPlayer.create(MainActivity.this,R.raw.impact6291);
                 mp.start();
             }
@@ -75,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method is used to fill the spinner (dropdown) widget with elements using ArrayAdapter
-     * SOURCE: CodeEasy on Youtube
+     * SOURCE: CodesEasy on Youtube
+     * https://youtu.be/4ogzfAipGS8?feature=shared
      */
     public void CreateSpinner(Spinner s) {
         String[] elems = {"+", "-", "×", "÷"};

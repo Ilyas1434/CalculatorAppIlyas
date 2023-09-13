@@ -4,4 +4,5 @@
     <dimen name="buttonMargins">30dp</dimen>
     <dimen name="inputMargins">30dp</dimen>
     <dimen name="resultMargins">30dp</dimen>
+    <dimen name="padding">10dp</dimen>
 </resources>

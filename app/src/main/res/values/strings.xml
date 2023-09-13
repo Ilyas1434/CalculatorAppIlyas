@@ -8,5 +8,5 @@ Simply choose two numbers, your preferred operation, and calculate!
 
  </string>
     <string name="calcResults">calculator results displayed here</string>
-
+<string name="app_name">Calculator of Destiny</string>
 </resources>

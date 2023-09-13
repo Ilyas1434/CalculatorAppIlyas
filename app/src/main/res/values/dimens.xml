@@ -2,4 +2,6 @@
 <resources>
     <dimen name="inputFontSize">13sp</dimen>
     <dimen name="buttonMargins">30dp</dimen>
+    <dimen name="inputMargins">30dp</dimen>
+    <dimen name="resultMargins">30dp</dimen>
 </resources>

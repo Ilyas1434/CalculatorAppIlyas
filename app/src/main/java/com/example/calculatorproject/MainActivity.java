@@ -1,5 +1,7 @@
 package com.example.calculatorproject;
 
+import static com.example.calculatorproject.R.raw.impact6291;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.media.MediaPlayer;
+
 
 public class MainActivity extends AppCompatActivity {
     private String selection;
@@ -63,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
                     // When input isn't valid
                     resultView.setText("Invalid input");
                 }
+                MediaPlayer mp =MediaPlayer.create(MainActivity.this,R.raw.impact6291);
+                mp.start();
             }
         });
     }
